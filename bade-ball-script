@@ -1,14 +1,23 @@
-print("script started")
+local localPlayer = game.Players.LocalPlayer
 getgenv().god = true
+print("start of script")
 while getgenv().god and task.wait() do
-    for _,ball in next, workspace.Balls:GetChildren() do
+    for _, ball in next, workspace.Balls:GetChildren() do
         if ball then
             if game:GetService("Players").LocalPlayer.Character and game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-                game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, ball.Position)
-                if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Highlight") then
-                    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = ball.CFrame * CFrame.new(0, 0, (ball.Velocity).Magnitude * -0.5)
+                local ballVelocity = ball.Velocity
+                local playerPosition = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position
+                local distance = (ball.Position - playerPosition).Magnitude
+                if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Highlight") and distance <= 20 then
+                    print("Ball's current velocity is: " .. tostring(ballVelocity))
+                    local lookVector = (ball.Position - playerPosition).Unit
+                    lookVector = Vector3.new(lookVector.X, 0, lookVector.Z)
+                    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(playerPosition, playerPosition + lookVector)
+                    task.wait(distance / ballVelocity.Magnitude - 1)
+                    if not game:GetService("Players").LocalPlayer.Character:FindFirstChild("Highlight") then
+                        break
+                    end
                     game:GetService("ReplicatedStorage").Remotes.ParryButtonPress:Fire()
-                    wait(0.1)
                 end
             end
         end
