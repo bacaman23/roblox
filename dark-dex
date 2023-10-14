@@ -1,5 +1,5 @@
 --execute loadstring(game:HttpGet('https://raw.githubusercontent.com/bacaman23/roblox/main/dark-dex'))() 
-
+-- not coded by me
 local Services = setmetatable({},{
 	__index = function(self, ind)
 		if ypcall(function()game:GetService(ind)end) then
