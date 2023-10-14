@@ -1,4 +1,4 @@
-loadstring(game:HttpGet('link')()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/bacaman23/roblox/main/bade-ball-script')()
 local localPlayer = game.Players.LocalPlayer
 getgenv().god = true
 print("start of script")
