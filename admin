@@ -1,3 +1,4 @@
+-- not my code had to move here for loadstring to work
 local CmdGui = Instance.new("ScreenGui")
 local Background = Instance.new("Frame")
 local CmdName = Instance.new("TextLabel")
