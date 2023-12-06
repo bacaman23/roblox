@@ -1,3 +1,4 @@
+-- made by bacaman23#6979 on discord
 local v0 = {};
 v0["obf_stringchar%0"] = string.char;
 v0["obf_stringbyte%0"] = string.byte;
