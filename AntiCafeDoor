@@ -1,0 +1,8 @@
+local workspace = game:GetService("Workspace")
+local doorsFolder = workspace:FindFirstChild("Doors")
+
+if doorsFolder then
+    for _, item in ipairs(doorsFolder:GetChildren()) do
+        item:Destroy()
+    end
+end
