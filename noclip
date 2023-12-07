@@ -1,0 +1,8 @@
+local player = game.Players.LocalPlayer
+local character = player.Character
+if character then
+    local humanoid = character:FindFirstChild("Humanoid")
+    if humanoid then
+        humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics, true)
+    end
+end
