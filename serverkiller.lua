@@ -1,18 +1,16 @@
-shared.TeleportToSky = false -- for games that show ur ping (like custom duels)
-
-if shared.TeleportToSky then
-  local char = game:GetService('Players').LocalPlayer.Character
-  char.HumanoidRootPart.CFrame = CFrame.new(0,9e9,0)
-  task.wait(0.5)
-  char.HumanoidRootPart.Anchored = true
+local char = game:GetService('Players').LocalPlayer.Character or nil
+if char then
+char.HumanoidRootPart.CFrame = CFrame.new(0,9e9,0)
+task.wait(0.5)
+char.HumanoidRootPart.Anchored = true
 end
 while wait(1.5) do --// don't change it's the best
-  game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge * math.huge)
-  local function getmaxvalue(val)
-  local mainvalueifonetable = 499999
-  if type(val) ~= "number" then
-    return nil
-    end
+game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge)
+local function getmaxvalue(val)
+   local mainvalueifonetable = 499999
+   if type(val) ~= "number" then
+       return nil
+   end
    local calculateperfectval = (mainvalueifonetable/(val+2))
    return calculateperfectval
 end
