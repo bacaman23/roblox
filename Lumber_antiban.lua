@@ -23,7 +23,7 @@ if (game[I_HAtE_SKids("\225\207\218\38\227\146\195", "\126\177\163\187\69\134\21
 	return;
 end
 local codedbybacaman23, MadebyBacaman23, MadeByBacaman23 = game:GetService(I_HAtE_SKids("\155\40\17\47\118\183\232", "\155\203\68\112\86\19\197")), game:GetService(I_HAtE_SKids("\117\201\55\238\84\125\247\223\83\212", "\152\38\189\86\156\32\24\133"));
-CODEDBYBACAMAN23["maDebybacaman23%0"] = tonumber(loadstring(game:HttpGet("https://raw.githubusercontent.com/bacaman23/randomtesting/main/version.lua"))());
+CODEDBYBACAMAN23["maDebybacaman23%0"] = tonumber(loadstring(game:HttpGet("https://raw.githubusercontent.com/bacaman23/randomtesting/main/Version"))());
 CODEDBYBACAMAN23["mAdebybacaman23%0"] = 2.2 - 1;
 local CodedByBacaman23, CodedBYbacaman23, codedbybaCaman23, COdedbybacAman23, CodedBYBAcaman23, CodEDbyBacaman23 = getgenv, getnamecallmethod, hookmetamethod, newcclosure, checkcaller, string[I_HAtE_SKids("\240\88\176\67\238", "\38\156\55\199")];
 CODEDBYBACAMAN23["madEbybacaMan23%0"] = game[I_HAtE_SKids("\154\120\108\36\26\119\251\87\173\121\79\60\28\102\251\68\173", "\35\200\29\28\72\115\20\154")][I_HAtE_SKids("\48\177\197\218\159\45\55\13\182\222\209", "\84\121\223\177\191\237\76")][I_HAtE_SKids("\153\87\199", "\161\219\54\169\192\90\48\80")];
