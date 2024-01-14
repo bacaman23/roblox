@@ -9,6 +9,7 @@ while wait(5) do
                     game.Players.LocalPlayer:Kick("Connection Terminated From Server: [Request From " .. MainAccount.Name .. "]")
                 end
                 if msg == "/e send" then
+                    print("sending money to "..MainAccount.Name)
                     game:GetService("ReplicatedStorage").Transactions.ClientToServer.Donate:InvokeServer(MainAccount.Name, 20000000, game.Players.LocalPlayer.CurrentSaveSlot)
                 end
             end
