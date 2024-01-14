@@ -6,12 +6,6 @@
 █   █ █   █ █     █   █     █ █     █   █   █   █     █   █ 
  ███  ████  █     █████ █████  ████ █   █   █   █████ ████ 
 
-█      ███  █     
-█     █   █ █     
-█     █   █ █     
-█     █   █ █     
-█████  ███  █████ 
-
 ]]-- Only Works On The Green Ball        Coded By Bacaman23#6979 On Discord
 
 local MADEBYBACAMAN23ONDISCORD = {};
