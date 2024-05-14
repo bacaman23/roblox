@@ -5,7 +5,7 @@ put this before the loadstring
 getgenv().settings = {
     Notifications = true,
     TweenSpeed = 200, -- how manny studs it moves a sec, set to 5k to be instant tped
-    SearchDistance = 200 -- how far each search goes, recomended to be 200-300
+    SearchDistance = 200 -- how far each search goes, recommended to be 200-300
 }
 
 ]]--      coded by bacaman23 on discord
